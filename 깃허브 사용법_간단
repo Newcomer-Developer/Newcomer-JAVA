@@ -1,9 +1,9 @@
 ## 소개 
 스터디 하시는데 쓰셔야 하는 깃허브 사용법을 여기 기록 합니다.
-우선 깃허브가 처음 이시면 유튜브 영상을 찾아 감을 잡으세요~
-저는 여기 영상을 보았습니다. 양이 많으니 skip 하시면서 기본 부분만 보세요. 
-개념 잡는데 더 좋은 소스 있으면 업데이트 해 주세여~
-예: https://www.youtube.com/watch?v=1I3hMwQU6GU&t=5462s
+
+## 깃 허브가 처음 이시면?
+여기 PDF 파일이 개념 파악 하기 잘 되어 있습니다. 
+https://paullabworkspace.notion.site/GitHub-435ec8074bcf4353afb947f601a030df
 
 ### 여기 저장소를 개인의 저장소로 복사 (fork)
 1. 여기 저장소에 위에 Newcomer-Developer/ New comer-JAVA (Public) 줄에 오른쪽에 Fork 버튼 클릭
