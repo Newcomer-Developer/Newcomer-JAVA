@@ -42,9 +42,6 @@ upstream        https://github.com/Newcomer-Developer/Newcomer-JAVA.git (push)
 
 
 
-### 이 github 사용법 글에 대한 피드백
-1. 뉴비/풀스텍/서울/28/남 > 브런치 고나련 명령어도 넣어주면 될거 같아요 ㅎㅎ
-
 ### branch
 1. git branch
 현재 브랜치 확인
