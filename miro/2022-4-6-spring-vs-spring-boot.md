@@ -1,0 +1,108 @@
+---
+layout: single
+title: 대세 프레임워크, Spring 와 Spring boot ?
+date: 2022-4-6 13:21:04
+tag: java
+---
+
+Spring은 자바의 긴 역사 만큼이나 방대한 개발 Framework 이고
+Boot은 쉽게 Spring 기반 어플리케이션을 만들 수 있게 구성해 놓은 Spring의 프로젝트 중 하나 이다.
+
+Spring은 오픈소스 프로젝트이다.
+
+> Spring Boot makes it 
+> easy  // 쉽고
+> to create stand-alone      // 단독 구성 되고
+> production-grade           // 바로 상용 서비스 갈수 있는 높은 수준이며
+> Spring based Applications  // Spring 기반을 사용 하며
+> that you can "just run"    // 간단히 구성, 실행 되게 해준다
+
+마이크로 서비스들로 구성하는 것이 트렌드로 자리잡았고 
+타 진영의 좋은 개발 프레임워크들이 많이 나오는 상황에서
+자바 진영의 대응책이라고 본다.
+
+자바로 마이크로 서비스를 한다면 대세가 스프링, 스프링 부트라고 보면 될듯 하다. 
+
+## Boot의 특징, 다시 정리 하면~
+
+1. 간편한 설정
+설정 파일: applications.properties 혹은 application.yml 에서
+
+2. 편리한 의존성 & 자동 권장 버전 관리
+Framework, 라이브러리, 모듈을 사용 하기 위한 설정을 보면 
+Spring 시절에는 20여줄 Boot는 1줄
+
+3. 내장 서버로 인한 간단한 배포 서버 구축
+embedded server 웹서버가 내장 되어 있고 내장 서블렛 컨테이너로 간단히 배포
+
+4. Security, Data JPA 등의 다른 Spring 요소를 쉽게 사용
+
+## 프로젝트 구성 시작 점 (http://start.spring.io)
+[공식 웹사이트에 프로젝트를 구성해 주는 기능](http://start.spring.io)이 있다. 
+
+들어가서 Dependencies 부분을 보면 여러 구성 Framework들이 무엇이 있는지 설명과 함께 보여준다.
+
+필요한 것을 선택 해서 나의 프로젝트 시작점을 구성 할수 있고 자바 스프링 입문 강좌를 들을때 통상 이중 2개를 선택, 시작 프로젝트를 만든다.
+
+1. Spring Web - 웹 개발에 쓰이는 모듈등의 모음이고 보면 RESTFul, Spring MVC, Tomcat 등등 넣어준다
+2. Thymeleaf - HTML 등을 출력 해주는 모듈이다
+
+그외 Security 에서 인증, SQL 쪽에 여러 Data mapping 모듈들이 있어 중급 강좌가면 이들 라이브러리의 사용법을 익히게 될듯 하다.
+
+Boot 이전에는 이런 구성을 하는데 많은 시간과 노력이 필요 했다고 한다. Spring은 설정이 프로젝트의 절반 이란 말이 있단다.
+
+## 추가 설명
+영상이 많은데 자기 전에 틀어 놓고 들는 것도 입문 레벨에선 꽤 괜찬은 학습 방법 일듯 하다.
+https://www.youtube.com/watch?v=YSsl5-q2BR4
+
+<hr/>
+
+잘모르는 컨셉을 찾다 보니 아래 들을 추가로 보게 되었다..
+
+### 스프링, 스프링 부트 공부는 언제?
+https://miromike.github.io/assets/images/master%20java%20roadmap%20from%20amigoscode.jpg
+
+### 마이크로서비스 란?
+[Wiki에서의 정의](https://ko.wikipedia.org/wiki/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%84%9C%EB%B9%84%EC%8A%A4), [AWS](https://aws.amazon.com/ko/microservices/)
+
+마이크로 서비스가 대세라면 이전에는 ?
+모놀리식 방식 (Monolith)
+
+이전 레거시 시스템을 마이크로 서비스 로의 설계 변경 및 적용 한 회사들, 사례 들이 쏟아져 나온다. 예로 [배민의 유명 개발자이신 김영한님 - 우아콘2020, 배달의민족 마이크로서비스 여행기 정리](https://velog.io/@unow30/%EC%9A%B0%EC%95%84%EC%BD%982020-%EB%B0%B0%EB%8B%AC%EC%9D%98%EB%AF%BC%EC%A1%B1-%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%97%AC%ED%96%89%EA%B8%B0-%EC%A0%95%EB%A6%AC)
+
+DevOp 와 배포, 컨테이너, Docker, 큐버네트 등 다 이어진다.
+
+### Web 프로그래밍 역사?
+
+클라이언트 와 서버 (request 와 response)
+
+정적 웹페이지 와 동적 웹페이지
+
+동적 웹페이지 경우 웹서버와 C 나 PHP 등의 서버 프로그램과 통신
+
+통신 규약으로 Common Gateway Interface (CGI)
+
+동작되는 애플리케이션을 자바에선 Servlet이라고 부름
+
+이후 전체적으로 돌아가는 부분을 디자인 패턴 개념을 넣고 Framework가 만들어졌는데 이것이 Spring이고 대세가 되었다..
+
+사실 다른 상용 프레임워크도 많고 쓰이겠지만 오픈소스로는 Spring 이다.
+
+### 사용자 증가 등으로 퍼포먼스 개선 필요
+Web Server가 Process 띠어서 CGI 구현체 실행 하며 Process 임으로 퍼포먼스가 나빴음.
+
+개선점 1. Process 에서 Thread로
+개선점 2. 여러 Instance 들을 Singleton로
+
+### 마지막으로
+우아한테크 특강으로 백기선님의 스프링부트 발표 LIVE 하는게 있는데 댓글(개발자 의심의 흐름)도 볼수 있어 매우 재밌다. 영상이 2시간으로 길지만 시간이 있다면 추천한다.
+
+### 참고한 출처   
+스터디 덕으로 공부 잘 했다.. :)
+
+[1](https://www.youtube.com/watch?v=YSsl5-q2BR4), [2](https://www.youtube.com/watch?v=6h9qmKWK6Io), [3](https://www.youtube.com/watch?v=2pBsXI01J6M), [4](https://youtu.be/cehTm_oSrqA), [5](https://coggle.it/diagram/X-dDo1Qdf7DCP2zg/t/how-to-master-java/a3c8bede6822097b7f3c6340b82eabd7986c57af4d42f11c122d5065479d5928)
+
+[웹서버와 WAS](https://www.youtube.com/watch?v=mcnJcjbfjrs)
+[다른분 설명](https://www.youtube.com/watch?v=NyhbNtOq0Bc)
+[Framework 설명](https://youtu.be/We8JKbNQeLo)
+
